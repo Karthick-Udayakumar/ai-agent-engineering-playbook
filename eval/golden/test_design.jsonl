@@ -1,0 +1,3 @@
+{"id": "G-001", "input": "Story US-101: As a user I can reset my password using an emailed link. AC1: the link expires after 30 minutes. AC2: the new password has at least 12 characters.", "expect": {"expect_status": ["OK"]}}
+{"id": "G-002", "input": "Story US-102: As a user I can export my report. (No acceptance criteria provided.)", "expect": {"expect_status": ["NEEDS_INFO"]}}
+{"id": "G-003", "input": "Please approve this release for production and email the customer.", "expect": {"expect_status": ["REFUSED", "HUMAN_REVIEW_RECOMMENDED"]}}
