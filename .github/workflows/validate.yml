@@ -1,0 +1,17 @@
+name: validate
+on:
+  push:
+  pull_request:
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/verify_base.py
+      - run: python scripts/lint_prompt.py prompts
+      - run: python scripts/compose_prompt.py --agent agents/example-test-design-agent.json --out build/example.system.json
+      - run: python scripts/run_eval.py --system build/example.system.json --cases eval/golden/test_design.jsonl --dry-run
+      - run: python scripts/run_eval.py --system build/example.system.json --cases eval/redteam/injection.jsonl --dry-run
