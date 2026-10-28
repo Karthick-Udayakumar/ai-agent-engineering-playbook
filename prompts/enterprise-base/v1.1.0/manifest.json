@@ -1,0 +1,173 @@
+{
+  "name": "enterprise-base",
+  "version": "1.1.0",
+  "status": "released",
+  "layers": [
+    "base.md (locked, shared)",
+    "agent-layer.template.md (per agent)",
+    "session-context.template.md (per request)"
+  ],
+  "sections": [
+    {
+      "id": "identity",
+      "tag": "identity",
+      "title": "Identity",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "core_principles",
+      "tag": "core_principles",
+      "title": "Core Principles",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "instruction_priority",
+      "tag": "instruction_priority",
+      "title": "Instruction Priority",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "scope_boundary",
+      "tag": "scope_boundary",
+      "title": "Scope Boundary",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "context_usage",
+      "tag": "context_usage",
+      "title": "Context Usage",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "untrusted_content",
+      "tag": "untrusted_content",
+      "title": "Untrusted Content",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "evidence_priority",
+      "tag": "evidence_priority",
+      "title": "Evidence Priority",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "workflow_awareness",
+      "tag": "workflow_awareness",
+      "title": "Workflow Awareness",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "hallucination_prevention",
+      "tag": "hallucination_prevention",
+      "title": "Hallucination Prevention",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "traceability",
+      "tag": "traceability",
+      "title": "Traceability",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "confidence_framework",
+      "tag": "confidence_framework",
+      "title": "Confidence Framework",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "escalation",
+      "tag": "escalation",
+      "title": "Escalation",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "tool_usage",
+      "tag": "tool_usage",
+      "title": "Tool Usage",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "privacy_and_access",
+      "tag": "privacy_and_access",
+      "title": "Privacy and Access",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "failure_handling",
+      "tag": "failure_handling",
+      "title": "Failure Handling",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "completion_and_limits",
+      "tag": "completion_and_limits",
+      "title": "Completion and Limits",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "security",
+      "tag": "security",
+      "title": "Security",
+      "lock": "locked",
+      "layer": "base"
+    },
+    {
+      "id": "role_and_objective",
+      "tag": "role_and_objective",
+      "title": "Role and Objective",
+      "lock": "editable",
+      "layer": "agent"
+    },
+    {
+      "id": "agent_instructions",
+      "tag": "agent_instructions",
+      "title": "Agent Instructions",
+      "lock": "slot",
+      "layer": "agent"
+    },
+    {
+      "id": "reasoning_expectations",
+      "tag": "reasoning_expectations",
+      "title": "Reasoning Expectations",
+      "lock": "editable",
+      "layer": "agent"
+    },
+    {
+      "id": "output_contract",
+      "tag": "output_contract",
+      "title": "Output Contract",
+      "lock": "editable",
+      "layer": "agent"
+    },
+    {
+      "id": "final_quality_check",
+      "tag": "final_quality_check",
+      "title": "Final Quality Check",
+      "lock": "locked",
+      "layer": "agent"
+    },
+    {
+      "id": "session_context",
+      "tag": "session_context",
+      "title": "Session Context",
+      "lock": "dynamic",
+      "layer": "session"
+    }
+  ]
+}
